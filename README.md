@@ -1,1 +1,1 @@
-# STM32G030F6P6-Mini_WAV_Recorder
+#Mini WAV Recorder on STM32G030F6P6
