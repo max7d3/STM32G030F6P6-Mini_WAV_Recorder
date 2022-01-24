@@ -1,0 +1,41 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m0plus",
+    "extra_flags": "-DSTM32G0xx -DSTM32G030xx",
+    "f_cpu": "64000000L",
+    "framework_extra_flags": {
+      "arduino": "-D__CORTEX_SC=0"
+    },
+    "mcu": "stm32g030xx",
+    "product_line": "STM32G030XX",
+    "variant": "STM32G030F6"
+  },
+  "debug": {
+    "jlink_device": "STM32G030F6",
+    "openocd_target": "stm32g0x",
+    "svd_path": "STM32G030.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "libopencm3",
+    "stm32cube"
+  ],
+  "name": "stm32g030",
+  "upload": {
+    "maximum_ram_size": 6144,
+    "maximum_size": 32768,
+    "protocol": "mbed",
+    "protocols": [
+      "blackmagic",
+      "cmsis-dap",
+      "dfu",
+      "jlink",
+      "serial",
+      "stlink"
+    ]
+  },
+  "url": "https://www.st.com/en/evaluation-tools/stm32g0316-disco.html",
+  "vendor": "ST"
+}
